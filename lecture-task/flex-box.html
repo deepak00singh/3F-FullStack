@@ -1,0 +1,62 @@
+<html>
+
+<head>
+    <title>
+        flex-box
+    </title>
+    <style>
+        .container {
+            outline: 2px solid black;
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+        }
+
+        .container div {
+            color: white;
+            background-color: #19c1e8e2;
+            text-align: center;
+            align-content: center;
+            flex-basis: 100px;
+            height: 150px;
+        }
+
+        #box1 {
+            flex: 2 0 200px;
+            background-color: rgb(85, 7, 146);
+        }
+
+        #box2 {
+            flex: 1 0 200px;
+            background-color: rgb(216, 11, 142);
+        }
+
+        #box3 {
+            flex: 1 0 200px;
+            background-color: rgb(8, 242, 28);
+        }
+
+        #box4 {
+            flex: 1 0 350px;
+            background-color: rgb(242, 215, 8);
+        }
+
+        #box5 {
+            flex: 1 0 200px;
+            background-color: rgb(216, 59, 11);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div id="box1">Box 1</div>
+        <div id="box2">Box 2</div>
+        <div id="box3">Box 3</div>
+        <div id="box4">Box 4</div>
+        <div id="box5">box5</div>
+
+    </div>
+</body>
+
+</html>

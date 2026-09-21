@@ -1,0 +1,141 @@
+<html>
+
+<head>
+    <title>
+        GRID
+    </title>
+    <style>
+        * {
+            color: rgb(11, 51, 226);
+            margin: 0px;
+            padding: 0px;
+            font-size: 30px;
+        }
+
+        h2 {
+            color: brown;
+        }
+
+        input[type="email"] {
+            color: black;
+            border-radius: 20px;
+        }
+
+        [data=mydata] {
+            color: rgb(32, 61, 4);
+            background: rgb(176, 237, 176);
+            border-radius: 10px;
+            padding: 5px;
+            width: 150px;
+
+        }
+
+        #myid {
+            color: rgb(46, 3, 87);
+            background-color: blueviolet;
+            padding: 5px;
+            border-radius: 10px;
+            width: 150px;
+
+
+        }
+
+        .myclass {
+            color: rgb(230, 230, 10);
+            background-color: aqua;
+            padding: 5px;
+            border-radius: 10px;
+            width: 150px;
+
+        }
+
+        .data {
+            color: rgb(140, 12, 12);
+            background-color: red;
+            padding: 5px;
+            border-radius: 10px;
+            width: 150px;
+        }
+
+
+        section h1 {
+            color: green;
+        }
+
+        section>h2 {
+            color: red;
+        }
+
+        h1+li {
+            color: green;
+            background-color: yellow;
+            border-radius: 10px;
+        }
+
+        button:hover {
+            color: rgb(255, 0, 0);
+            background-color: rgb(255, 251, 140);
+            cursor: pointer;
+        }
+
+        button {
+            border-radius: 10px;
+            padding: 5px;
+            width: 150px;
+            cursor: pointer;
+        }
+
+        button:active {
+            color: aquamarine;
+            background-color: blueviolet;
+            cursor: pointer;
+        }
+
+        a:visited {
+            color: green;
+        }
+
+        a:active {
+            color: red;
+        }
+
+        a:link {
+            color: grey;
+        }
+    </style>
+
+</head>
+
+<body>
+    <h2>SELECTORS</h2>
+    <ul>
+        <li data="mydata">universal</li>
+        <li>element</li>
+        <li>type</li>
+        <li class="myclass">class</li>
+        <li id="myid">id</li>
+        <li class="data">attribute</li>
+        <li>combinators</li>
+        <li>pseudo class</li>
+        <li>pseudo element</li>
+        <input type="email" placeholder="enter email">
+
+    </ul><br><br>
+    <section>
+        <h1>COMBINATORS</h1>
+        <ul>
+            <li>
+                <h1>descendent</h1>
+            </li>
+            <li>child</li>
+            <li>adjacent sibling</li>
+            <li>general sibling</li>
+        </ul>
+    </section>
+
+
+    <button>click me</button><br><br><br>
+    <a href="#2">link</a>
+</body>
+
+</html>

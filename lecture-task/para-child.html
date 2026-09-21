@@ -1,0 +1,42 @@
+<html>
+
+<head>
+    <title>para's types</title>
+    <style>
+        p {
+            font-size: 25px;
+        }
+
+        p:has(span) {
+            color: purple;
+        }
+
+        span {
+            color: red;
+        }
+
+        p:nth-of-type(even) {
+            color: green;
+        }
+
+        p::first-letter {
+            color: aqua;
+        }
+    </style>
+</head>
+
+<body>
+    <p>para1</p>
+    <p>para2</p>
+    <p>para<span>3</span>type</p>
+    <p>para4</p>
+    <p>para5</p>
+    <p>para6</p>
+    <p>para7</p>
+    <p>para8</p>
+    <p>para9</p>
+    <p>para10</p>
+
+</body>
+
+</html>

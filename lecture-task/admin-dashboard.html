@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Simple Dashboard Layout</title>
+    <style>
+        body {
+            font-family: sans-serif;
+            margin: 20px;
+        }
+
+        .container {
+            display: grid;
+            grid-template-columns: repeat(6, 1fr);
+            gap: 15px;
+            grid-template-areas:
+                "header header header header header header"
+                "sidebar stat1 stat1 stat2 stat2 stat3"
+                "sidebar recent recent recent activity activity"
+                "footer footer footer footer footer footer";
+        }
+
+        .box {
+            border: 2px solid #333;
+            padding: 40px 20px;
+            font-size: 24px;
+            text-align: center;
+            background-color: #f9f9f9;
+        }
+
+        .header {
+            grid-area: header;
+            background-color: #ffcccc;
+        }
+
+        .sidebar {
+            grid-area: sidebar;
+            background-color: #ccffcc;
+        }
+
+        .stat1 {
+            grid-area: stat1;
+            background-color: #ccccff;
+        }
+
+        .stat2 {
+            grid-area: stat2;
+            background-color: #ccccff;
+        }
+
+        .stat3 {
+            grid-area: stat3;
+            background-color: #ccccff;
+        }
+
+        .recent {
+            grid-area: recent;
+            background-color: #ffffcc;
+        }
+
+        .activity {
+            grid-area: activity;
+            background-color: #ffccff;
+        }
+
+        .footer {
+            grid-area: footer;
+            background-color: #dddddd;
+        }
+
+        /* Tablet Layout */
+        @media (max-width: 1024px) {
+            .container {
+                grid-template-columns: repeat(3, 1fr);
+                grid-template-areas:
+                    "header header header"
+                    "sidebar sidebar sidebar"
+                    "stat1 stat2 stat3"
+                    "recent recent activity"
+                    "footer footer footer";
+            }
+
+            .sidebar {
+                padding: 20px;
+                min-height: auto;
+            }
+        }
+
+        /* Mobile Layout */
+        @media (max-width: 768px) {
+            .container {
+                grid-template-columns: 1fr;
+                grid-template-areas:
+                    "header"
+                    "sidebar"
+                    "stat1"
+                    "stat2"
+                    "stat3"
+                    "recent"
+                    "activity"
+                    "footer";
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container">
+        <div class="box header">Header</div>
+        <div class="box sidebar">Sidebar</div>
+        <div class="box stat1">Stat 1</div>
+        <div class="box stat2">Stat 2</div>
+        <div class="box stat3">Stat 3</div>
+        <div class="box recent">Recent Order</div>
+        <div class="box activity">Activity</div>
+        <div class="box footer">Footer</div>
+    </div>
+</body>
+
+</html>

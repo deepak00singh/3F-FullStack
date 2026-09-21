@@ -1,0 +1,57 @@
+<html>
+
+<head>
+    <title>
+        GRID
+    </title>
+    <style>
+        .container {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+            gap: 1%;
+            grid-template-areas:
+                "box1 box2 box3 box4"
+                "box5 box6 box7 box8"
+                "box9 box10 box11 box12";
+        }
+
+        .box {
+            background-color: red;
+            min-height: 100px;
+            color: white;
+            font-size: 20px;
+            text-align: center;
+        }
+
+        @media screen and (max-width:500px) {
+            .container {
+                grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+                gap: 1%;
+                grid-template-areas:
+                    "box1 box2 box3 box4"
+                    "box5 box6 box7 box8"
+                    "box9 box10 box11 box12";
+            }
+        }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <div class="box" style="grid-area: box1;">1</div>
+        <div class="box" style="grid-area: box2;">2</div>
+        <div class="box" style="grid-area: box3;">3</div>
+        <div class="box" style="grid-area: box4;">4</div>
+        <div class="box" style="grid-area: box5;">5</div>
+        <div class="box" style="grid-area: box6;">6</div>
+        <div class="box" style="grid-area: box7;">7</div>
+        <div class="box" style="grid-area: box8;">8</div>
+        <div class="box" style="grid-area: box9;">9</div>
+        <div class="box" style="grid-area: box10;">10</div>
+        <div class="box" style="grid-area: box11;">11</div>
+        <div class="box" style="grid-area: box12;">12</div>
+    </div>
+</body>
+
+</html>

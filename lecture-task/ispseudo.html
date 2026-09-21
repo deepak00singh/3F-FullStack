@@ -1,0 +1,30 @@
+<html>
+
+<head>
+    <title>
+        Is pseudo
+    </title>
+    <style>
+        h1,
+        h2 {
+            color: green;
+        }
+
+        :where(h1, h2) {
+            color: red;
+        }
+
+        :is(h1, h2) {
+            color: blue;
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <h1>Heading</h1>
+        <h2>Heading</h2>
+    </div>
+</body>
+
+</html>
