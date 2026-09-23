@@ -1,10 +1,6 @@
-* {
+body {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
-}
-
-body {
     font-family: 'Inter', sans-serif;
     background-color: #F1F5F9;
     color: #64748B;
@@ -13,7 +9,6 @@ body {
 .layout {
     display: flex;
     height: 100vh;
-    overflow: hidden;
 }
 
 .sidebar {
@@ -22,15 +17,14 @@ body {
     color: #CBD5E1;
     display: flex;
     flex-direction: column;
-    flex-shrink: 0;
-    overflow-y: auto;
 }
 
 .logo {
     height: 64px;
     display: flex;
     align-items: center;
-    padding: 0 20px;
+    padding-left: 20px;
+    padding-right: 20px;
     color: #FFFFFF;
     font-size: 16px;
     font-weight: 600;
@@ -40,9 +34,6 @@ body {
     display: flex;
     flex-direction: column;
     padding: 20px;
-    gap: 8px;
-    font-size: 14px;
-    font-weight: 500;
 }
 
 .menu a {
@@ -50,6 +41,9 @@ body {
     color: #CBD5E1;
     padding: 8px 16px;
     border-radius: 12px;
+    margin-bottom: 8px;
+    font-size: 14px;
+    font-weight: 500;
 }
 
 .menu a.active {
@@ -61,9 +55,7 @@ body {
     flex: 1;
     display: flex;
     flex-direction: column;
-    min-width: 0;
-    height: 100vh;
-    overflow-y: auto;
+    overflow-y: scroll;
 }
 
 .header {
@@ -73,24 +65,18 @@ body {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    padding: 0 32px;
+    padding-left: 32px;
+    padding-right: 32px;
     position: sticky;
     top: 0;
-    z-index: 10;
-    flex-shrink: 0;
 }
 
 .menu-btn {
     display: none;
-    background: none;
+    background-color: transparent;
     border: none;
     color: #0F172A;
-    cursor: pointer;
-}
-
-.menu-btn svg {
-    width: 24px;
-    height: 24px;
+    font-size: 24px;
 }
 
 .header-text {
@@ -101,15 +87,13 @@ body {
 
 .content {
     padding: 32px;
-    display: flex;
-    flex-direction: column;
-    gap: 24px;
 }
 
 .page-title {
     font-size: 24px;
     font-weight: 700;
     color: #0F172A;
+    margin-bottom: 24px;
 }
 
 .card {
@@ -119,29 +103,28 @@ body {
     border: 1px solid #E2E8F0;
     display: flex;
     flex-direction: column;
+    box-sizing: border-box;
 }
 
 .kpi-grid {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    gap: 24px;
-}
-
-.kpi-card {
-    gap: 8px;
-    justify-content: space-between;
+    grid-gap: 24px;
+    margin-bottom: 24px;
 }
 
 .kpi-label {
     font-size: 14px;
     font-weight: 500;
     color: #64748B;
+    margin-bottom: 8px;
 }
 
 .kpi-number {
     font-size: 28px;
     font-weight: 700;
     color: #0F172A;
+    margin-bottom: 8px;
 }
 
 .kpi-success {
@@ -152,7 +135,8 @@ body {
 .analytics-grid {
     display: grid;
     grid-template-columns: 2fr 1fr;
-    gap: 24px;
+    grid-gap: 24px;
+    margin-bottom: 24px;
 }
 
 .card-heading {
@@ -169,13 +153,12 @@ body {
     border: 1px solid #E2E8F0;
 }
 
-.analytics-table {
+.table-card {
     overflow: hidden;
 }
 
 .table-container {
-    overflow-x: auto;
-    width: 100%;
+    overflow-x: scroll;
 }
 
 table {
@@ -214,13 +197,13 @@ th {
 
 .secondary-grid {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 24px;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 24px;
 }
 
 @media (max-width: 1024px) {
     .kpi-grid {
-        grid-template-columns: repeat(2, 1fr);
+        grid-template-columns: 1fr 1fr;
     }
 }
 
@@ -230,7 +213,8 @@ th {
     }
     
     .header {
-        padding: 0 16px;
+        padding-left: 16px;
+        padding-right: 16px;
     }
     
     .menu-btn {
@@ -249,7 +233,11 @@ th {
         grid-template-columns: 1fr;
     }
     
-    .analytics-grid, .secondary-grid {
+    .analytics-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .secondary-grid {
         grid-template-columns: 1fr;
     }
 }

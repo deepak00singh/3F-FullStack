@@ -1,104 +1,104 @@
 <!DOCTYPE html>
-<html lang="en">
-
+<html>
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Admin Analytics Dashboard</title>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="index.css">
+<title>Admin Analytics Dashboard</title>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="index.css">
 </head>
-
 <body>
-    <div class="layout">
-        <aside class="sidebar">
-            <div class="logo">Dashboard</div>
-            <nav class="menu">
-                <a href="#" class="active">Dashboard</a>
-                <a href="#">Analytics</a>
-                <a href="#">Settings</a>
-            </nav>
-        </aside>
-        <div class="main-content">
-            <header class="header">
-                <button class="menu-btn">
-                    <svg fill="none" stroke="currentColor" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M4 6h16M4 12h16M4 18h16"></path>
-                    </svg>
-                </button>
-                <div class="header-text">Admin</div>
-            </header>
-            <main class="content">
-                <h1 class="page-title">Dashboard</h1>
-                <div class="kpi-grid">
-                    <div class="card kpi-card">
-                        <span class="kpi-label">Total Revenue</span>
-                        <span class="kpi-number">$45,231</span>
-                        <span class="kpi-success">+20.1%</span>
-                    </div>
-                    <div class="card kpi-card">
-                        <span class="kpi-label">Subscriptions</span>
-                        <span class="kpi-number">+2,350</span>
-                        <span class="kpi-success">+180.1%</span>
-                    </div>
-                    <div class="card kpi-card">
-                        <span class="kpi-label">Sales</span>
-                        <span class="kpi-number">+12,234</span>
-                        <span class="kpi-success">+19%</span>
-                    </div>
-                    <div class="card kpi-card">
-                        <span class="kpi-label">Active Now</span>
-                        <span class="kpi-number">+573</span>
-                        <span class="kpi-success">+201 since last hour</span>
-                    </div>
-                </div>
-                <div class="analytics-grid">
-                    <div class="card analytics-chart">
-                        <h2 class="card-heading">Revenue Chart</h2>
-                        <div class="placeholder"></div>
-                    </div>
-                    <div class="card analytics-table">
-                        <h2 class="card-heading">Recent Orders</h2>
-                        <div class="table-container">
-                            <table>
-                                <thead>
-                                    <tr>
-                                        <th>Order</th>
-                                        <th>Status</th>
-                                    </tr>
-                                </thead>
-                                <tbody>
-                                    <tr>
-                                        <td class="order-id">#1234</td>
-                                        <td class="status-success">Paid</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="order-id">#1235</td>
-                                        <td class="status-warning">Pending</td>
-                                    </tr>
-                                    <tr>
-                                        <td class="order-id">#1236</td>
-                                        <td class="status-danger">Failed</td>
-                                    </tr>
-                                </tbody>
-                            </table>
-                        </div>
-                    </div>
-                </div>
-                <div class="secondary-grid">
-                    <div class="card">
-                        <h2 class="card-heading">Traffic</h2>
-                        <div class="placeholder"></div>
-                    </div>
-                    <div class="card">
-                        <h2 class="card-heading">Top Products</h2>
-                        <div class="placeholder"></div>
-                    </div>
-                </div>
-            </main>
-        </div>
-    </div>
-</body>
 
+<div class="layout">
+  
+  <div class="sidebar">
+    <div class="logo">Dashboard</div>
+    <div class="menu">
+      <a href="#" class="active">Dashboard</a>
+      <a href="#">Analytics</a>
+      <a href="#">Settings</a>
+    </div>
+  </div>
+
+  <div class="main-content">
+    
+    <div class="header">
+      <button class="menu-btn">&#9776;</button>
+      <div class="header-text">Admin</div>
+    </div>
+
+    <div class="content">
+      <div class="page-title">Dashboard</div>
+      
+      <div class="kpi-grid">
+        <div class="card">
+          <div class="kpi-label">Total Revenue</div>
+          <div class="kpi-number">$45,231</div>
+          <div class="kpi-success">+20.1%</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Subscriptions</div>
+          <div class="kpi-number">+2,350</div>
+          <div class="kpi-success">+180.1%</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Sales</div>
+          <div class="kpi-number">+12,234</div>
+          <div class="kpi-success">+19%</div>
+        </div>
+        <div class="card">
+          <div class="kpi-label">Active Now</div>
+          <div class="kpi-number">+573</div>
+          <div class="kpi-success">+201 since last hour</div>
+        </div>
+      </div>
+
+      <div class="analytics-grid">
+        <div class="card">
+          <div class="card-heading">Revenue Chart</div>
+          <div class="placeholder"></div>
+        </div>
+        <div class="card table-card">
+          <div class="card-heading">Recent Orders</div>
+          <div class="table-container">
+            <table>
+              <thead>
+                <tr>
+                  <th>Order</th>
+                  <th>Status</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr>
+                  <td class="order-id">#1234</td>
+                  <td class="status-success">Paid</td>
+                </tr>
+                <tr>
+                  <td class="order-id">#1235</td>
+                  <td class="status-warning">Pending</td>
+                </tr>
+                <tr>
+                  <td class="order-id">#1236</td>
+                  <td class="status-danger">Failed</td>
+                </tr>
+              </tbody>
+            </table>
+          </div>
+        </div>
+      </div>
+
+      <div class="secondary-grid">
+        <div class="card">
+          <div class="card-heading">Traffic</div>
+          <div class="placeholder"></div>
+        </div>
+        <div class="card">
+          <div class="card-heading">Top Products</div>
+          <div class="placeholder"></div>
+        </div>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+</body>
 </html>
